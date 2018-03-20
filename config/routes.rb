@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  # get 'posts/index'
+  #
+  # get 'posts/new'
+  #
+  # get 'posts/show'
+  #
+  # get 'authors/index'
+  #
+  # get 'authors/new'
+  #
+  # get 'authors/show'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -53,4 +65,6 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  resources :authors, only: [:index, :new, :show, :create]
 end
